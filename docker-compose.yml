@@ -8,7 +8,7 @@ services:
     volumes:
       - ./:/gitlabrunner-admin
     command: >
-      sh -c "npm run start"
+      sh -c "npm run dev"
     ports:
       - "3000:3000"
-    container_name: admiin
+    container_name: admin
