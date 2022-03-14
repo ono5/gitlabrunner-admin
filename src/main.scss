@@ -1,4 +1,2 @@
-$color: green;
-body {
-  background: $color;
-}
+// _はいらない
+@use "scss/base/base";
