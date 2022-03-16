@@ -21,6 +21,8 @@ npm i react-lazy-load-image-component
 npm i --save-dev @types/react-lazy-load-image-component
 npm install react-icons --save
 npm i --save-dev @types/react-dom
+
+npm i react-youtube
 ```
 
 ## Project
@@ -39,3 +41,4 @@ And add script to package.json.
 ```
 
 We need to install [Concurrently](https://www.npmjs.com/package/concurrently) package!
+
