@@ -6,7 +6,7 @@ const Header = () => {
 		// TODO
 	})
 	return (
-		<div className="head">
+		<div className="header">
 			<div className="header__video">
 				<MyYouTube />
 			</div>
