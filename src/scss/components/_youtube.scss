@@ -1,8 +1,7 @@
 @use "../abstracts/mixins";
 
 .youtube {
-  position: relative;
-  width: 100%;
+  @include mixins.position(relative, null, null, null, null, 100%, 100%);
   padding-top: 56.25%;
 }
 

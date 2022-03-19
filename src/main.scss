@@ -1,6 +1,9 @@
 // _はいらない
 @use "scss/base/base";
 
+// import utils
+@use "scss/utils/utils";
+
 // iimport components
 @use "scss/components/header";
 @use "scss/components/youtube";
