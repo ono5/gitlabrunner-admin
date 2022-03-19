@@ -42,3 +42,8 @@ And add script to package.json.
 
 We need to install [Concurrently](https://www.npmjs.com/package/concurrently) package!
 
+## CSS clip-path maker
+
+https://bennettfeely.com/clippy/
+
+
