@@ -1,7 +1,10 @@
 import {useState} from "react"
 import MyYouTube from "./Youtube";
 
-const Header = () => {
+const Header = (
+	{heading, paragraph, children}: {
+		heading: string, paragraph: string, children: any
+	}) => {
 	const [state] = useState({
 		// TODO
 	})
@@ -15,13 +18,13 @@ const Header = () => {
 					<div className="header__contents__text">
 						<div className="header__contents__text__child">
 							<h1 className="header__contents__text__child__h1">
-								Admin GitLab Runner
+								{heading}
 							</h1>
 							<p className="header__contents__text__child__p">
-								Come and join us we admin gitlab runner
+								{paragraph}
 							</p>
 							<div className="header__contents__text__child__link">
-								<button>Get Started</button>
+								{children}
 							</div>
 						</div>
 					</div>

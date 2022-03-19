@@ -1,9 +1,16 @@
+import { useState } from "react"
 import Header from '../components/Header'
 
 const Home = () => {
+	const [state] = useState({
+		heading: 'Admin GitLab Runner',
+		paragraph: 'Come and join us we admin gitlab runner',
+	})
 	return (
 		<>
-			<Header />
+			<Header heading={state.heading} paragraph={state.paragraph}>
+				<button>Get Started</button>
+			</Header>
 		</>
 	)
 }
