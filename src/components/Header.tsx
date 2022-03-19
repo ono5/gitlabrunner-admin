@@ -6,10 +6,15 @@ const Header = (
 		heading: string, paragraph: string, children: any
 	}) => {
 	const [state] = useState({
-		// TODO
+		logo: '/assets/images/gitlab-logo.png',
 	})
 	return (
 		<div className="header">
+			<div className="container pr">
+				<div className="header__logo">
+					<img src={state.logo} alt="gitlab-logo" />
+				</div>
+			</div>
 			<div className="header__video">
 				<MyYouTube />
 			</div>
