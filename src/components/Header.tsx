@@ -6,7 +6,8 @@ const Header = (
 		heading: string, paragraph: string, children: any
 	}) => {
 	const [state] = useState({
-		logo: '/assets/images/gitlab-logo.png',
+		// logo: '/assets/images/gitlab-logo.png',
+		logo: '',
 	})
 	return (
 		<div className="header">
