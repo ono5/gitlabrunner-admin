@@ -46,4 +46,21 @@ We need to install [Concurrently](https://www.npmjs.com/package/concurrently) pa
 
 https://bennettfeely.com/clippy/
 
+## Using @forward
 
+```src/scss/abstracts/_index.scss```
+
+Declear the following @forward.
+
+```
+@forward "variables";
+@forward "mixins";
+```
+
+And then, you use them this below.
+
+```
+@use "../abstracts";
+
+@include abstracts.position(fixed, 0, 0, 0, 0, 100%, 100%);
+```
