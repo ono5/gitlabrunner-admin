@@ -1,11 +1,23 @@
+import { useContext } from "react"
+import ModelContext from "../context/ModelContext"
+
 const Model = () => {
-	return (
-		<div className="model">
+	const {state, closeModel} = useContext(ModelContext)
+	const close = (e: any) => {
+		if (e.target.getAttribute('class') === 'model') {
+			closeModel(false)
+		}
+	}
+
+	return state.modelStatus ? (
+		<div className="model" onClick={close}>
 			<div className="model__body">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae animi cumque itaque cupiditate obcaecati non debitis, accusamus doloribus inventore necessitatibus nihil qui nisi ducimus impedit ipsum vitae ea, quos exercitationem!
 			</div>
 		</div>
 	)
+	:
+	(<></>)
 }
 
 export default Model

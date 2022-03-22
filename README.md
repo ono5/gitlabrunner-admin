@@ -64,3 +64,27 @@ And then, you use them this below.
 
 @include abstracts.position(fixed, 0, 0, 0, 0, 100%, 100%);
 ```
+
+## Context
+
+### 1. コンテキストを作る
+
+```
+const ModelContext = createContext({
+	state: { modelStatus: false },
+	dispatch: (type: {}) => {},
+})
+```
+
+### 2. コンテキストにセットする
+これはなるべく上流で行う。
+このアプリでは、App.tsxにセットしている。
+
+```
+const [state, dispatch] = useState({modelStatus: false})
+<ModelContext.Provider value={{ state, dispatch }}></ModelContext.Provider>
+```
+
+### 3. コンテキストからデータを取り出す
+```const data = useContext(ModelContext)```
+
