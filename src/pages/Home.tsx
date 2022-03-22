@@ -4,7 +4,7 @@ import Model from "../components/Model"
 import ModelContext from "../context/ModelContext"
 
 const Home = () => {
-	const { openModel } = useContext(ModelContext)
+	const { dispatch } = useContext(ModelContext)
 	const [state] = useState({
 		heading: 'Admin GitLab Runner',
 		paragraph: 'Come and join us we admin gitlab runner',
@@ -14,7 +14,7 @@ const Home = () => {
 			<Header heading={state.heading} paragraph={state.paragraph}>
 				<button
 				className="btn-default"
-				onClick={openModel}
+				onClick={() => dispatch({type: 'OPEN_MODEL'})}
 			>Get Started</button>
 			</Header>
 			<Model />

@@ -2,10 +2,10 @@ import { useContext } from "react"
 import ModelContext from "../context/ModelContext"
 
 const Model = () => {
-	const {state, closeModel} = useContext(ModelContext)
+	const {state, dispatch} = useContext(ModelContext)
 	const close = (e: any) => {
 		if (e.target.getAttribute('class') === 'model') {
-			closeModel(false)
+			dispatch({type: 'CLOSE_MODEL'})
 		}
 	}
 

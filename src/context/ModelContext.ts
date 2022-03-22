@@ -2,8 +2,7 @@ import { createContext } from "react";
 
 const ModelContext = createContext({
 	state: { modelStatus: false },
-	openModel: (type: {}) => {},
-	closeModel: (type: {}) => {},
+	dispatch: (type: {}) => {},
 })
 
 export default ModelContext
