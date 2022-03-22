@@ -4,7 +4,7 @@ import Model from "../components/Model"
 import ModelContext from "../context/ModelContext"
 
 const Home = () => {
-	const { state: ss, openModel } = useContext(ModelContext)
+	const { openModel } = useContext(ModelContext)
 	const [state] = useState({
 		heading: 'Admin GitLab Runner',
 		paragraph: 'Come and join us we admin gitlab runner',
