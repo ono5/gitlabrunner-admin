@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const ModelContext = createContext({
-	state: { modelStatus: false },
+	state: { modelStatus: false, current: '' },
 	dispatch: (type: {}) => {},
 })
 

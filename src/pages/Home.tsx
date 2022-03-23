@@ -12,15 +12,18 @@ const Home = () => {
 		heading: 'Admin GitLab Runner',
 		paragraph: 'Come and join us we admin gitlab runner',
 	})
+
+	const [registerModel] = useState('registerModel')
+
 	return (
 		<>
 			<Header heading={state.heading} paragraph={state.paragraph}>
 				<button
 				className="btn-default"
-				onClick={() => dispatch({type: OPEN_MODEL})}
+				onClick={() => dispatch({type: OPEN_MODEL, payload: registerModel})}
 			>Get Started</button>
 			</Header>
-			<Model>
+			<Model current={registerModel}>
 				<Register />
 			</Model>
 			<Model>
