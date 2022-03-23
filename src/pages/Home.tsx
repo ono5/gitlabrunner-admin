@@ -4,6 +4,7 @@ import Model from "../components/Model"
 import ModelContext from "../context/ModelContext"
 import { OPEN_MODEL } from "../context/types/ModelTypes"
 import Register from "../auth/Register"
+import Login from "../auth/Login"
 
 const Home = () => {
 	const { dispatch } = useContext(ModelContext)
@@ -21,6 +22,9 @@ const Home = () => {
 			</Header>
 			<Model>
 				<Register />
+			</Model>
+			<Model>
+				<Login />
 			</Model>
 		</>
 	)
