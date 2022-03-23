@@ -1,4 +1,9 @@
-const Register = () => {
+import { useContext } from "react"
+import ModelContext from "../context/ModelContext"
+import { OPEN_MODEL } from "../context/types/ModelTypes"
+
+const Register = (props: any) => {
+	const { dispatch } = useContext(ModelContext)
 	return (
 		<form>
 			<div className="model__heading">
@@ -15,7 +20,7 @@ const Register = () => {
 			</div>
 			<div className="group flex space-between y-center">
 				<input type="submit" className="btn-dark" value="Register" />
-				<span>Already have an account?</span>
+				<span onClick={() => dispatch({type: OPEN_MODEL, payload: props.currentModel})}>Already have an account?</span>
 			</div>
 		</form>
 	)

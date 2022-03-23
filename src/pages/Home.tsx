@@ -14,6 +14,7 @@ const Home = () => {
 	})
 
 	const [registerModel] = useState('registerModel')
+	const [loginModel] = useState('loginModel')
 
 	return (
 		<>
@@ -24,10 +25,10 @@ const Home = () => {
 			>Get Started</button>
 			</Header>
 			<Model current={registerModel}>
-				<Register />
+				<Register currentModel={loginModel} />
 			</Model>
-			<Model>
-				<Login />
+			<Model current={loginModel}>
+				<Login currentModel={registerModel} />
 			</Model>
 		</>
 	)

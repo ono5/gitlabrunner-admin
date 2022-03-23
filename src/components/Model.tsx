@@ -10,6 +10,7 @@ const Model = (props: any) => {
 		}
 	}
 
+	// 呼び出しもとで表示したformの情報を渡す
 	return state.modelStatus && state.current === props.current ? (
 		<div className="model" onClick={close}>
 			<div className="model__body">{props.children}</div>
