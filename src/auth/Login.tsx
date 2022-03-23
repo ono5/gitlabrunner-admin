@@ -1,19 +1,40 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import ModelContext from "../context/ModelContext"
 import { OPEN_MODEL } from "../context/types/ModelTypes"
 
 const Login = (props: any) => {
 	const { dispatch } = useContext(ModelContext)
+	const [state, setState] = useState({
+		email: '',
+		password: '',
+	})
+
+	const loginForm = (e: any) => {
+		e.preventDefault()
+		console.log(state)
+	}
 	return (
-		<form>
+		<form onSubmit={loginForm}>
 			<div className="model__heading">
 				<h3>Login</h3>
 			</div>
 			<div className="group">
-				<input type="email" className="group__control" placeholder="Enter email" />
+				<input
+					type="email"
+					className="group__control"
+					placeholder="Enter email"
+					onChange={(e: any) => setState({...state, email: e.target.value})}
+					value={state.email}
+				/>
 			</div>
 			<div className="group">
-				<input type="password" className="group__control" placeholder="Enter password" />
+				<input
+					type="password"
+					className="group__control"
+					placeholder="Enter password"
+					onChange={(e: any) => setState({...state, password: e.target.value})}
+					value={state.password}
+				/>
 			</div>
 			<div className="group flex space-between y-center">
 				<input type="submit" className="btn-dark" value="Login" />
