@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import About from "./pages/About";
+import { HelmetProvider } from "react-helmet-async";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import ModelProvider from "./context/providers/ModelProvider";
 import NavProvider from "./context/providers/NavProvider";
@@ -15,11 +16,13 @@ function App() {
         <NavProvider>
           <Toggle />
           <Nav />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='*' element={<NotFound />} />
-          </Routes>
+          <HelmetProvider>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='*' element={<NotFound />} />
+            </Routes>
+          </HelmetProvider>
         </NavProvider>
       </ModelProvider>
     </Router>

@@ -7,7 +7,7 @@ const Toggle = () => {
 
 	return (
 		<div
-			className="toggle-open"
+			className={state ? 'toggle-close' : 'toggle-open'}
 			onClick={() => dispatch({ type: NAV_TOGGLE })}
 		>
 			<span></span>

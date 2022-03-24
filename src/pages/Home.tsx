@@ -1,4 +1,5 @@
 import { useContext, useState } from "react"
+import { Helmet } from "react-helmet-async"
 import Header from '../components/Header'
 import Model from "../components/Model"
 import ModelContext from "../context/ModelContext"
@@ -18,6 +19,11 @@ const Home = () => {
 
 	return (
 		<>
+			<Helmet>
+				<title>GitLab Runner Admin</title>
+				<meta name="description" content="GitLab to control runner" />
+				<meta name="keywords" content="gitlab, gitlab runner" />
+			</Helmet>
 			<Header heading={state.heading} paragraph={state.paragraph}>
 				<button
 				className="btn-default"
