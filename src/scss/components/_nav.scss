@@ -10,6 +10,7 @@
   @include position(fixed, 0, null, 0, 0, 31.2rem, 100%);
   background: $white;
   z-index: $nav-z-index;
+  transition: all 0.3s linear;
   @include align(flex, center, center, 100%);
 
   &__content {
