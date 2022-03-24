@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import ModelProvider from "./context/providers/ModelProvider";
 import NavProvider from "./context/providers/NavProvider";
 import Nav from "./components/Nav";
+import Toggle from "./components/Toggle";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <ModelProvider>
         <NavProvider>
+          <Toggle />
           <Nav />
           <Routes>
             <Route path='/' element={<Home />} />

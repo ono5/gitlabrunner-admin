@@ -3,13 +3,13 @@
 .navLayer {
   @include position(fixed, 0, 0, 0, 0, 100%, 100%);
   background: rgba(0, 0, 0, 0.6);
-  z-index: 3;
+  z-index: $navLayer-z-index;
 }
 
 .nav {
   @include position(fixed, 0, null, 0, 0, 31.2rem, 100%);
   background: $white;
-  z-index: 4;
+  z-index: $nav-z-index;
   @include align(flex, center, center, 100%);
 
   &__content {

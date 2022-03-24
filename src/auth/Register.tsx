@@ -24,24 +24,27 @@ const Register = (props: any) => {
 					type="text"
 					className="group__control"
 					placeholder="Enter name"
-					onChange={(e: any) => setState({...state, name: e.target.value})} />
+					onChange={(e: any) => setState({...state, name: e.target.value})}
 					value={state.name}
+					/>
 			</div>
 			<div className="group">
 				<input
 					type="email"
 					className="group__control"
 					placeholder="Enter email"
-					onChange={(e: any) => setState({...state, email: e.target.value})} />
+					onChange={(e: any) => setState({...state, email: e.target.value})}
 					value={state.email}
+					/>
 			</div>
 			<div className="group">
 				<input
 					type="password"
 					className="group__control"
 					placeholder="Create password"
-					onChange={(e: any) => setState({...state, password: e.target.value})} />
+					onChange={(e: any) => setState({...state, password: e.target.value})}
 					value={state.password}
+					/>
 			</div>
 			<div className="group flex space-between y-center">
 				<input type="submit" className="btn-dark" value="Register" />
