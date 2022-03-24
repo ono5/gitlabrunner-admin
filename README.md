@@ -96,3 +96,9 @@ WebのTitleをページ毎に自由に変更できる。
 ```
 npm i react-helmet-async
 ```
+
+
+## Create Favicon
+
+[favicon.io](https://favicon.io/)
+
