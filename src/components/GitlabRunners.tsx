@@ -14,7 +14,7 @@ const GitlabRunners = () => {
 	return (
 		<div className="gitlabrunners">
 			<div className="container">
-				<div className="row">
+				<div className="row mr-minus-15 ml-minus-15">
 					<div className="col-6 p-15">
 						<h3 className="gitlabrunners__heading">{state.heading}</h3>
 					</div>
@@ -23,7 +23,7 @@ const GitlabRunners = () => {
 					</div>
 				</div>
 				<div className="gitlabrunners__block">
-					<div className="row">
+					<div className="row mr-minus-15 ml-minus-15">
 						{gitlabrunners.map((gitlabrunner) => (
 							<GitlabRunnersList gitlabrunner={gitlabrunner} key={gitlabrunner.id} />
 						))}
