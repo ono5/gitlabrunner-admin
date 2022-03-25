@@ -102,3 +102,12 @@ npm i react-helmet-async
 
 [favicon.io](https://favicon.io/)
 
+## Optimize images loading process
+画像の読み込みを最適化する。
+[React Lazy Load](https://www.npmjs.com/package/react-lazy-load-image-component)
+
+```
+<img src="/assets/images/gitlab.jpg" alt={props.gitlabrunner.name} />
+↓
+<LazyLoadImage src="/assets/images/gitlab.jpg" alt={props.gitlabrunner.name} />
+```
