@@ -1,6 +1,7 @@
 import { gitlabType } from "../context/GitlabRunnersContext"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import { GiBowenKnot } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const GitlabRunnersList = (props: {gitlabrunner: gitlabType}) => {
 	return (
@@ -15,6 +16,11 @@ const GitlabRunnersList = (props: {gitlabrunner: gitlabType}) => {
 						<div className="gitlabrunners__card__layer__content__project">
 							{props.gitlabrunner.name}
 						</div>
+					</div>
+				</div>
+				<div className="gitlabrunners__card__info">
+					<div className="gitlabrunners__card__info__text">
+						<Link className="btn-white" to="/">Get Detail</Link>
 					</div>
 				</div>
 			</div>
