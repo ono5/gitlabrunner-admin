@@ -111,3 +111,8 @@ npm i react-helmet-async
 ↓
 <LazyLoadImage src="/assets/images/gitlab.jpg" alt={props.gitlabrunner.name} />
 ```
+
+## React Icons
+
+[React Icons](https://react-icons.github.io/react-icons/)
+
