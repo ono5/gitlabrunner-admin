@@ -4,6 +4,7 @@ import GitlabRunnersContext from "../context/GitlabRunnersContext"
 import { Helmet } from "react-helmet-async"
 import { DETAILS } from "../context/types/GitlabrunnerTypes"
 import Header from "../components/Header"
+import GitlabRunnerInfo from "../components/GitlabRunnerInfo"
 
 const Details = () => {
 	const {gitlabRunnersData, dispatch} = useContext(GitlabRunnersContext)
@@ -24,7 +25,8 @@ const Details = () => {
 				heading={details.name}
 				paragraph=""
 				children=""
-				image="/assets/images/gitlab.jpg"></Header>
+				image="/assets/images/gitlab.jpg" />
+			<GitlabRunnerInfo details={details}/>
 		</>
 	)
 }
