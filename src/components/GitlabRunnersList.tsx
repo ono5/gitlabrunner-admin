@@ -20,7 +20,7 @@ const GitlabRunnersList = (props: {gitlabrunner: gitlabType}) => {
 				</div>
 				<div className="gitlabrunners__card__info">
 					<div className="gitlabrunners__card__info__text">
-						<Link className="btn-white" to="/">Get Detail</Link>
+						<Link className="btn-white" to={`/details/${props.gitlabrunner.id}`}>Get Detail</Link>
 					</div>
 				</div>
 			</div>
