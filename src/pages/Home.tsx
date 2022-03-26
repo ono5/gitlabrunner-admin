@@ -25,7 +25,7 @@ const Home = () => {
 				<meta name="description" content="GitLab to control runner" />
 				<meta name="keywords" content="gitlab, gitlab runner" />
 			</Helmet>
-			<Header heading={state.heading} paragraph={state.paragraph}>
+			<Header heading={state.heading} paragraph={state.paragraph} image="">
 				<button
 				className="btn-default"
 				onClick={() => dispatch({type: OPEN_MODEL, payload: registerModel})}

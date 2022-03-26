@@ -20,10 +20,20 @@ const initGitlabRunners: [gitlabType] = [{
 	idletime: 0
 }]
 
+const initGitlabRunnersDetails: gitlabType = {
+	id: 0,
+	name: '',
+	details: '',
+	taglist: '',
+	url: '',
+	token: '',
+	idletime: 0
+}
+
 const GitlabRunnersContext = createContext({
 	gitlabRunnersData: {
 		gitlabrunners: initGitlabRunners,
-		details: initGitlabRunners,
+		details: initGitlabRunnersDetails,
 	},
 	dispatch: (type: {}) => {},
 })

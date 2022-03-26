@@ -1,9 +1,10 @@
 import {useState} from "react"
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import MyYouTube from "./Youtube";
 
 const Header = (
-	{heading, paragraph, children}: {
-		heading: string, paragraph: string, children: any
+	{heading, paragraph, children, image}: {
+		heading: string, paragraph: string, children: any, image: string,
 	}) => {
 	const [state] = useState({
 		// logo: '/assets/images/gitlab-logo.png',
@@ -13,11 +14,11 @@ const Header = (
 		<div className="header">
 			<div className="container pr">
 				<div className="header__logo">
-					<img src={state.logo} alt="gitlab-logo" />
+					<LazyLoadImage src={state.logo} alt="gitlab-logo" />
 				</div>
 			</div>
 			<div className="header__video">
-				<MyYouTube />
+				{image ? ( <LazyLoadImage src={image} alt={image} />) : (<MyYouTube />)}
 			</div>
 			<div className="header__contents">
 				<div className="container">
