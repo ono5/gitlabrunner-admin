@@ -23,6 +23,7 @@ const initGitlabRunners: [gitlabType] = [{
 const GitlabRunnersContext = createContext({
 	gitlabRunnersData: {
 		gitlabrunners: initGitlabRunners,
+		details: initGitlabRunners,
 	},
 	dispatch: (type: {}) => {},
 })

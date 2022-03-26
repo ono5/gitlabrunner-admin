@@ -6,6 +6,7 @@ import { gitlabrunners } from "../../data/gitlabrunners";
 const GitlabRunnersProvider = (props: any) => {
 	const [gitlabRunnersData, dispatch] = useReducer(GitlabRunnersReducer, {
 		gitlabrunners,
+		details: {},
 	})
 	return (
 		<GitlabRunnersContext.Provider value={{gitlabRunnersData, dispatch}}>
