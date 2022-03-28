@@ -19,6 +19,18 @@
     2rem
   );
   letter-spacing: 0.1rem;
+  @include responsive(xsmall) {
+    @include button(
+      $blackDark,
+      $blackDark,
+      $white,
+      4rem,
+      1.3rem,
+      0.4rem,
+      0,
+      2rem
+    );
+  }
 }
 
 .btn-white {

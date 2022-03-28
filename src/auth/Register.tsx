@@ -46,7 +46,7 @@ const Register = (props: any) => {
 					value={state.password}
 					/>
 			</div>
-			<div className="group flex space-between y-center">
+			<div className="group model__row">
 				<input type="submit" className="btn-dark" value="Register" />
 				<span onClick={() => dispatch({type: OPEN_MODEL, payload: props.currentModel})}>Already have an account?</span>
 			</div>
