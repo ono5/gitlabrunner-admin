@@ -1,7 +1,9 @@
+import FooterIntro from "./FooterIntro"
+
 const Footer = () => {
 	// 画像をSCSSから設定できないため、ここで設定する
 	const footerStyles = {
-		background: 'url(/assets/images/footer/footer.png)',
+		// background: 'url(/assets/images/footer/footer.png)',
 		backgroundAttachment: 'fixed',
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',
@@ -12,7 +14,9 @@ const Footer = () => {
 				<div className="container">
 					<div className="footer__container__block">
 						<div className="row ml-minus-15 mr-minus-15">
-							<div className="col-6 p-15"></div>
+							<div className="col-6 p-15">
+								<FooterIntro />
+							</div>
 							<div className="col-6 p-15"></div>
 						</div>
 					</div>
