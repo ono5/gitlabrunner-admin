@@ -1,4 +1,5 @@
 import FooterIntro from "./FooterIntro"
+import FooterLinks from "./FooterLinks"
 
 const Footer = () => {
 	// 画像をSCSSから設定できないため、ここで設定する
@@ -17,7 +18,9 @@ const Footer = () => {
 							<div className="col-6 p-15">
 								<FooterIntro />
 							</div>
-							<div className="col-6 p-15"></div>
+							<div className="col-6 p-15">
+								<FooterLinks />
+							</div>
 						</div>
 					</div>
 				</div>
