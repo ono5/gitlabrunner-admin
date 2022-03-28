@@ -7,6 +7,7 @@ import { OPEN_MODEL } from "../context/types/ModelTypes"
 import Register from "../auth/Register"
 import Login from "../auth/Login"
 import GitlabRunners from "../components/GitlabRunners"
+import Footer from "../components/footer/Footer"
 
 const Home = () => {
 	const { dispatch } = useContext(ModelContext)
@@ -42,6 +43,7 @@ const Home = () => {
 				<Login currentModel={registerModel} />
 			</Model>
 			<GitlabRunners />
+			<Footer />
 		</>
 	)
 }
