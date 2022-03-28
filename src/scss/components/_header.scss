@@ -7,11 +7,31 @@
   clip-path: polygon(50% 0%, 100% 0, 100% 90%, 0 100%, 0 100%, 0% 60%, 0 0);
   &__logo {
     @include position(absolute, 3rem, 0, null, null, null, null);
-    z-index: 1;
+    z-index: $logo-z-index;
+    @include responsive(large) {
+      left: 5rem;
+    }
+    @include responsive(medium) {
+      left: 4rem;
+    }
+    @include responsive(small) {
+      left: 2rem;
+    }
+    @include responsive(xsmall) {
+      left: 1.5rem;
+    }
+
     img {
       width: 15rem;
       height: auto;
       object-fit: cover;
+      cursor: pointer;
+      @include responsive(small) {
+        width: 13rem;
+      }
+      @include responsive(xsmall) {
+        width: 10rem;
+      }
       animation: headerImage 0.5s linear;
 
       @keyframes headerImage {
