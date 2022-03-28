@@ -1,5 +1,4 @@
 import { useState, useContext } from "react";
-import GitlabRunnersContext from "../../context/GitlabRunnersContext";
 import ShowFooterLinks from "./ShowFooterLinks";
 
 const FooterLinks = () => {
@@ -16,7 +15,7 @@ const FooterLinks = () => {
 		],
 		headings: {
 			pages: 'pages',
-			projects: 'partners',
+			projects: 'projects',
 		},
 	});
 	const {headings, projects, pages} = state
