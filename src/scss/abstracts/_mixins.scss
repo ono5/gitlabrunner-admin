@@ -1,3 +1,5 @@
+@use "breakpoints" as *;
+
 @mixin position($position, $top, $left, $bottom, $right, $width, $height) {
   position: $position;
   top: $top;
@@ -62,4 +64,30 @@
   height: $height;
   margin-top: $mt;
   transition: all 0.3s linear;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == large {
+    @media (max-width: $lg) {
+      @content; // 呼び出し元の定義を使う
+    }
+  }
+
+  @if $breakpoint == medium {
+    @media (max-width: $md) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == small {
+    @media (max-width: $sm) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == xsmall {
+    @media (max-width: $xsm) {
+      @content;
+    }
+  }
 }

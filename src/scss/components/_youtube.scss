@@ -3,6 +3,9 @@
 .youtube {
   @include mixins.position(relative, null, null, null, null, 100%, 100%);
   padding-top: 56.25%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .iframe {

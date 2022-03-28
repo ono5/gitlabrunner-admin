@@ -13,7 +13,7 @@ const FooterIntro = () => {
 			<div className="footer__intro__img">
 				<LazyLoadImage src={state.logo} alt="footer logo" />
 			</div>
-			<div className="footer__intro__msg">{state.intro}</div>
+			<p className="footer__intro__msg">{state.intro}</p>
 		</div>
 	)
 }
