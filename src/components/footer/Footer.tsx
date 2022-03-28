@@ -4,10 +4,10 @@ import FooterLinks from "./FooterLinks"
 const Footer = () => {
 	// 画像をSCSSから設定できないため、ここで設定する
 	const footerStyles = {
-		// background: 'url(/assets/images/footer/footer.png)',
+		background: 'url(/assets/images/footer/footer.png)',
 		backgroundAttachment: 'fixed',
 		backgroundSize: 'cover',
-		backgroundRepeat: 'no-repeat',
+		backgroundRepeat: 'no-repeat'
 	}
 	return (
 		<footer className="footer" style={footerStyles}>
@@ -22,6 +22,9 @@ const Footer = () => {
 								<FooterLinks />
 							</div>
 						</div>
+					</div>
+					<div className="footer__bottom">
+						<p>&copy; copy right gitlab projects {new Date().getFullYear()}</p>
 					</div>
 				</div>
 			</div>
