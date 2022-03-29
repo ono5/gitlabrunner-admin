@@ -4,7 +4,8 @@ import FooterLinks from "./FooterLinks"
 const Footer = () => {
 	// 画像をSCSSから設定できないため、ここで設定する
 	const footerStyles = {
-		background: 'url(/assets/images/footer/footer.png)',
+		// background: 'url(/assets/images/footer/footer.png)',
+		backgroundColor: '#e0e0e0',
 		backgroundAttachment: 'fixed',
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat'
